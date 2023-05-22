@@ -29,6 +29,51 @@ header .logo img{
     height: 100%;
 }
 
+footer .rodape{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(75,75,75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .rodape-conteudo{
+    width: 70%;
+    height: 200px;
+    border-top: 2px solid rgb(150, 150, 150);
+    border-bottom: 2px solid rgb(150, 150, 150);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .rede-social{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .rede-social img{
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+}
+
+footer .rodape-link a{
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    padding-right: 30px;
+}
+
+footer .rodape-link a:hover{
+    color: white;
+}
+
+footer .rodape-direitos p{
+    color: rgb(160, 160, 160);
+}
+
 .menu1{
     width: 80%;
     height: 80px;
@@ -61,13 +106,13 @@ header .logo img{
 }
 
 .menu1 ul li a{
-    color: white;
+    color: rgb(216, 216, 216);
     font-size: 15px;
     text-decoration: none;
 }
 
 .menu1 ul li a:hover{
-    font-weight: bold;
+    color: white;
 }
 
 .conteudo{
