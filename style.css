@@ -138,7 +138,7 @@ footer .rodape-direitos p{
 }
 
 .slides{
-    width: 500%;
+    width: 100%;
     height: 500px;
     display: flex;
 }
@@ -148,7 +148,7 @@ footer .rodape-direitos p{
 }
 
 .slide{
-    width: 20%;
+    width: 100%;
     position: relative;
 }
 
@@ -179,26 +179,6 @@ footer .rodape-direitos p{
 
 .manual-btn:hover{
     background-color: rgb(204,87,199);
-}
-
-#radio1:checked ~ .first{
-    margin-left:0;
-}
-
-#radio2:checked ~ .first{
-    margin-left:-20%;
-}
-
-#radio3:checked ~ .first{
-    margin-left:-40%;
-}
-
-#radio4:checked ~ .first{
-    margin-left:-60%;
-}
-
-#radio5:checked ~ .first{
-    margin-left:-80%;
 }
 
 .navigation-auto div{

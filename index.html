@@ -30,22 +30,10 @@
                     <input type="radio" name="radio-btn" id="radio3">
                     <input type="radio" name="radio-btn" id="radio4">
                     <input type="radio" name="radio-btn" id="radio5">
-        
                     <div class="slide first">
-                        <img src="img/promocao/produto1.webp"/>
+                        <img id="img-promocao" src="img/promocao/produto1.jpg"/>
                     </div>
-                    <div class="slide">
-                        <img src="img/promocao/produto2.jpg"/>
-                    </div>
-                    <div class="slide">
-                        <img src="img/promocao/produto3.webp"/>
-                    </div>
-                    <div class="slide">
-                        <img src="img/promocao/produto4.avif"/>
-                    </div>
-                    <div class="slide">
-                        <img src="img/promocao/produto5.webp"/>
-                    </div>
+
                     <div class="navigation-auto">
                         <div class="auto-btn1"></div>
                         <div class="auto-btn2"></div>
@@ -56,11 +44,11 @@
         
                 </div>
                 <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio1" class="manual-btn" onclick="radioselect(1)"></label>
+                    <label for="radio2" class="manual-btn" onclick="radioselect(2)"></label>
+                    <label for="radio3" class="manual-btn" onclick="radioselect(3)"></label>
+                    <label for="radio4" class="manual-btn" onclick="radioselect(4)"></label>
+                    <label for="radio5" class="manual-btn" onclick="radioselect(5)"></label>
                 </div>       
             </div>
             <script type="text/javascript" src="script.js"></script>
