@@ -154,9 +154,49 @@ footer .rodape-direitos p{
     position: relative;
 }
 
-.slide img{
+.slide img,
+.slide .slide--imagem {
+    position: relative;
+
     width: 100%;
     height: 400px;
+}
+
+.slide .slide--imagem .slide--imagem__detalhes {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
+
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .8), transparent);
+
+    color: white;
+}
+
+.slide .slide--imagem .slide--imagem__detalhes h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.slide .slide--imagem .slide--imagem__detalhes .slide--imagem__preco {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.slide .slide--imagem .slide--imagem__detalhes .slide--imagem__preco strong {
+    display: inline-block;
+
+    padding: 4px 8px;
+    width: fit-content;
+
+    border-radius: 4px;
+
+    font-size: 20px;
+    background-color: rgb(204,87,199);
 }
 
 .manual-navigation{
