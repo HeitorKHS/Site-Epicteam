@@ -1,0 +1,390 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(30, 30, 30);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(75, 75, 75);
+    display: flex;
+    justify-content: center;
+}
+
+header .cabecalho-conteudo{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+header .logo{
+    width: 20%;
+    height: 100px;
+}
+
+header .logo img{
+    height: 100%;
+}
+
+footer .rodape{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(75,75,75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .rodape-conteudo{
+    width: 70%;
+    height: 200px;
+    border-top: 2px solid rgb(150, 150, 150);
+    border-bottom: 2px solid rgb(150, 150, 150);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .rede-social{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .rede-social img{
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+}
+
+footer .rodape-link a{
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    padding-right: 30px;
+}
+
+footer .rodape-link a:hover{
+    color: white;
+}
+
+footer .rodape-direitos p{
+    color: rgb(160, 160, 160);
+}
+
+.menu1{
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.menu1 ul{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.menu1 ul li{
+    list-style: none;
+}
+
+.menu1 .baixar{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(204,87,199);
+    border-radius: 3px;
+}
+
+.menu1 ul li a{
+    color: rgb(216, 216, 216);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.menu1 ul li a:hover{
+    color: white;
+}
+
+.conteudo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudo .promocao{
+    width: 80%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-principal{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.menu-principal ul{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+    padding-right: 40px;
+}
+
+.menu-principal ul li{
+    list-style: none;
+}
+
+.menu-principal ul li a{
+    color: rgb(216, 216, 216);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu-principal ul li a:hover{
+    color: white;
+    border-bottom: 2px solid rgb(204,87,199);
+}
+
+.modal-header button{
+    padding: 0.6rem 1.2rem;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+  
+button:hover {
+    opacity: 1;
+}
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+  
+#modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    background-color: rgb(92, 92, 92);
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+}
+
+#fade,
+#modal{
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+  
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+  
+.modal-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.modal-body form{
+    padding-top: 15px;
+}
+  
+.modal-body input{
+    background-color: rgb(187, 187, 187);
+    border: 2px solid;
+    padding-top: 7px;
+    display: flex;
+    border-color: rgb(204,87,199);
+    border-radius: 7px;
+}
+  
+.modal-body .inputc{
+    background-color: rgb(204,87,199);
+    color: white;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+}
+  
+#modal.hide,
+#fade.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+  
+#modal.hide{
+    top: 0;
+}
+
+#txtBusca{
+    color: white;
+    float:left;
+    background-color:transparent;
+    font-size:18px;
+    border: 1px solid rgb(204,87,199);
+    border-radius: 15px;
+    height:32px;
+    width:250px;
+    text-align: center;
+  }
+
+.exibir-jogo{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.conteudo-jogo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-jogo img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.descricao{
+    width: 40%;
+    margin-left: 40px;
+    margin-right: 60px;
+    margin-top: -70px;
+}
+
+.descricao h1{
+    font-size: 35px;
+    color: white;
+}
+
+.descricao p{
+    margin-top: -20px;
+    font-size: 20px;
+    color: rgb(182, 182, 182);
+}
+
+.button-jogo{
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+.button-jogo button{
+    margin-top: 15px;
+    border: 1px solid rgb(204,87,199);
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+}
+
+.button-jogo button:hover{
+    background-color: rgb(204,87,199);
+}
+
+.requisitos{
+    width: 70%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(46, 46, 46);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.requisitos h1{
+    color: white;
+    font-size: 20px;
+}
+
+.requisitos-conteudo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.requisitos-conteudo h1{
+    font-size: 15px;
+    color: rgb(131, 131, 131);
+    margin-top: 5px;
+}
+
+.requisitos-conteudo p{
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: white;
+}
+
+.requisitos-minimos{
+    width: 38%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.requisitos-recomendados{
+    width: 38%;
+    height: auto;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}

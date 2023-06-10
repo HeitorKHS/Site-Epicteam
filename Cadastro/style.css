@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(75, 75, 75);
+    display: flex;
+    justify-content: center;
+}
+
+header .cabecalho-conteudo{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+header .logo{
+    width: 20%;
+    height: 100px;
+}
+
+header .logo img{
+    height: 100%;
+}
+
+.menu1{
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.menu1 ul{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.menu1 ul li{
+    list-style: none;
+}
+
+.menu1 .baixar{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(204,87,199);
+    border-radius: 3px;
+}
+
+.menu1 ul li a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.menu1 ul li a:hover{
+    font-weight: bold;
+}
+
+.image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url('img/epic-games-store-free-games.webp')
+}
+
+.cadastro{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro2{
+    display: flex;
+    width: 40%;
+    height: 500px;
+    font-size: 20px;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(75, 75, 75);
+    border-radius: 15px;
+}
+
+.forms{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forms input{
+    width: 100%;
+    background-color: rgb(128, 128, 128);
+    border: 1px solid;
+    padding-top: 7px;
+    display: flex;
+    border-color: rgb(204,87,199);
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+.forms .inputc{
+    background-color: rgb(204,87,199);
+    color: white;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+}
+
+.tipoconta{
+    display: flex;
+    font-size: 18px;
+}
+
+.tipoconta input{
+    background-color: rgb(204,87,199);
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+footer .rodape{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(75,75,75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .rodape-conteudo{
+    width: 70%;
+    height: 200px;
+    border-top: 2px solid rgb(150, 150, 150);
+    border-bottom: 2px solid rgb(150, 150, 150);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .rede-social{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .rede-social img{
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+}
+
+footer .rodape-link a{
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    padding-right: 30px;
+}
+
+footer .rodape-link a:hover{
+    color: white;
+}
+
+footer .rodape-direitos p{
+    color: rgb(160, 160, 160);
+}
